@@ -1,0 +1,63 @@
+{
+  "nodes": {
+    "1": {
+      "story": "You are a 17-year-old girl in Gaza. You're awakened early in the morning by your 16-year-old brother, Ibrahim, rustling. It looks like he might be gathering weapons into his bag. What do you do?",
+      "choices": [
+        {"description": "Try to stop him", "nextNodeId": "2"},
+        {"description": "Pretend to be sleeping", "nextNodeId": "3", "default": true},
+        {"description": "Help him", "nextNodeId": "4"}
+      ],
+      "externalSource": {
+        "url": "http://www.google.com",
+        "description": "Learn more about how Hamas recruits and arms children."
+      }
+    },
+    "2": {
+      "story": "You confront your brother, asking him about the weapons. He mutters under his breath that it's his time to take the fight to the zionists. Do you:",
+      "choices": [
+        {"description": "Argue and try to persuade him to stay", "nextNodeId": "5"},
+        {"description": "Reluctantly let him go", "nextNodeId": "6", "default": true},
+        {"description": "Go with him", "nextNodeId": "7"}
+      ]
+    },
+    "3": {
+      "story": "You decide to stay quiet and pretend to be asleep. After your brother leaves, you are left alone with your thoughts, worried about his safety. Do you:",
+      "choices": [
+        {"description": "Go back to sleep, trying to forget", "nextNodeId": "8", "default": true},
+        {"description": "Get up and tell your parents", "nextNodeId": "9"},
+        {"description": "Follow him discreetly", "nextNodeId": "7"}
+      ]
+    },
+    "4": {
+      "story": "You decide to help your brother. You help him pack his bag and pray for his safety. Do you:",
+      "choices": [
+        {"description": "Go back to sleep, trying to forget", "nextNodeId": "8", "default": true},
+        {"description": "Get up and tell your parents", "nextNodeId": "9"},
+        {"description": "Follow him discreetly", "nextNodeId": "7"}
+      ]
+    },
+    "7": {
+      "story": "The decision to follow is risky. You try to get dressed and sneak out as quietly and quickly as you can. By the time you leave you already can't see which way Ibrahim went. You walk to the edge of your street and see the modestly police. They will detain you if you are caught alone without a Male escort. Do you:",
+      "choices": [
+        {"description": "Try to sneak past them", "nextNodeId": "16"},
+        {"description": "Change your mind and go home", "nextNodeId": "17", "default": true}
+      ]
+    },
+    "5": {
+      "story": "You try to persuade your brother, talking about the dangers and the impact on your family. He seems torn but resolute. Do you:",
+      "choices": [
+        {"description": "Plead with him, bringing up family memories", "nextNodeId": "10"},
+        {"description": "Respect his decision but express your concerns", "nextNodeId": "11"},
+        {"description": "Say no more. You've said enough", "nextNodeId": "12", "default": true}
+      ]
+    },
+    "6": {
+      "story": "You let him go, feeling a mix of fear and respect for his determination. Alone, you ponder the complexity of your feelings. Do you:",
+      "choices": [
+        {"description": "Try to distract yourself with other activities", "nextNodeId": "13", "default": true},
+        {"description": "Reflect on the situation and write down your thoughts", "nextNodeId": "14"},
+        {"description": "Discuss your concerns with a close friend", "nextNodeId": "15"}
+      ]
+    }
+  }
+}

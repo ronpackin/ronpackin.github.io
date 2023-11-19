@@ -1,0 +1,78 @@
+#gameContainer {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+#backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+#narrative {
+  font-size: 1.2em;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 80%;
+  opacity: 0.75;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  opacity: 0.75;
+}
+
+#choices button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#choices button:hover {
+  background-color: #0056b3;
+}
+
+#timer {
+  font-size: 1em;
+  color: #dc3545;
+  margin-bottom: 20px;
+  opacity: 0.75;
+
+}
+
+#externalResource {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#externalResource a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#externalResource a:hover {
+  text-decoration: underline;
+}
