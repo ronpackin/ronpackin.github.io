@@ -5,11 +5,11 @@
       "choices": [
         {"description": "Try to stop him", "nextNodeId": "2"},
         {"description": "Pretend to be sleeping", "nextNodeId": "3", "default": true},
-        {"description": "Help him", "nextNodeId": "4"}
+        {"description": "Help him pack", "nextNodeId": "4"}
       ],
       "externalSource": {
         "url": "http://www.google.com",
-        "description": "Learn more about how Hamas recruits and arms children."
+        "description": "Learn more about how children get radicalizes and armed in Gaza."
       }
     },
     "2": {

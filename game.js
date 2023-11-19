@@ -4,23 +4,29 @@ let narratives;
 let timer;
 let countdown;
 const defaultDecisionTime = 30;
+let journey = [];
 
 async function initGame() {
     narratives = await loadNarratives(); // Load and set narratives
     displayNarrative('1'); // Start the game
 }
 
+function getJourneySummary() {
+    return journey.join('\n');
+}
+
 function displayNarrative(nodeId) {
     const node = narratives[nodeId];
     if (!node || !node.story) {
       console.log(nodeId, node)
-      document.getElementById('narrative').innerText = "Game over";
+      document.getElementById('narrative').innerText = "Your journey has ended.\n\n" + getJourneySummary();
       return;
     }
+    journey.push('Situation: ' + node.story);
     document.getElementById('narrative').innerText = node.story;
     document.getElementById('backgroundImage').style.backgroundImage = `url('backgrounds/1.png')`;
     // document.getElementById('backgroundImage').style.backgroundImage = `url('backgrounds/${nodeId}.png')`;
-    document.getElementById('externalResource').innerHTML = node.externalResource ? `<a href="${node.externalResource.url}">${node.externalResource.description}</a>` : '';
+    document.getElementById('externalResource').innerHTML = node.externalSource ? `<a target="_blank" href="${node.externalSource.url}">ⓘ ${node.externalSource.description}</a>` : '';
     
     const choicesContainer = document.getElementById('choices');
     choicesContainer.innerHTML = '';
@@ -34,7 +40,7 @@ function displayNarrative(nodeId) {
         }
         const button = document.createElement('button');
         button.innerText = choice.description;
-        button.onclick = () => selectChoice(choice.nextNodeId);
+        button.onclick = () => selectChoice(choice);
         choicesContainer.appendChild(button);
     });
 
@@ -51,16 +57,17 @@ function startTimer(timeLimit, defaultChoice) {
         timerElement.innerText = `Time remaining: ${countdown} seconds`;
         if (countdown <= 0) {
             clearInterval(timer);
-            selectChoice(defaultChoice.nextNodeId);
+            selectChoice(defaultChoice);
         }
     }, 1000);
 }
 
-function selectChoice(nextNodeId) {
-    if (nextNodeId === 'end') {
+function selectChoice(choice) {
+    journey.push('Choice: ' + choice.description);
+    if (choice.nextNodeId === 'end') {
         endGame();
     } else {
-        displayNarrative(nextNodeId);
+        displayNarrative(choice.nextNodeId);
     }
 }
 

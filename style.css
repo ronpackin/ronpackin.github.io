@@ -1,7 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Optional: Set your preferred font */
+}
+
 #gameContainer {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align narrative and choices at the bottom */
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -18,7 +25,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #narrative {
@@ -27,17 +34,19 @@
   background-color: rgba(255, 255, 255, 0.8);
   padding: 15px;
   border-radius: 5px;
-  margin-bottom: 20px;
-  margin-top: 80%;
-  opacity: 0.75;
+  opacity: 0.65;
+  max-width: 600px; /* Set maximum width */
+  margin-left: auto; /* Centering in the container */
+  margin-right: auto; /* Centering in the container */
 }
 
-#choices {
+#choices, #timer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
-  opacity: 0.75;
+  opacity: 0.8;
+  max-width: 600px; /* Set maximum width */
+  margin: 0 auto; /* Centering in the container */
 }
 
 #choices button {
@@ -57,20 +66,21 @@
 #timer {
   font-size: 1em;
   color: #dc3545;
-  margin-bottom: 20px;
-  opacity: 0.75;
-
+  margin-top: 8px;
+  margin-bottom: 18px;
 }
 
 #externalResource {
   font-size: 0.9em;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
+  z-index: 1;
 }
 
 #externalResource a {
-  color: #007bff;
   text-decoration: none;
+  color: #d9d9d9;
 }
 
 #externalResource a:hover {
