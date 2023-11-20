@@ -1,63 +1,147 @@
 {
-  "nodes": {
-    "1": {
-      "story": "You are a 17-year-old girl in Gaza. You're awakened early in the morning by your 16-year-old brother, Ibrahim, rustling. It looks like he might be gathering weapons into his bag. What do you do?",
-      "choices": [
-        {"description": "Try to stop him", "nextNodeId": "2"},
-        {"description": "Pretend to be sleeping", "nextNodeId": "3", "default": true},
-        {"description": "Help him pack", "nextNodeId": "4"}
-      ],
-      "externalSource": {
-        "url": "http://www.google.com",
-        "description": "Learn more about how children get radicalizes and armed in Gaza."
-      }
-    },
-    "2": {
-      "story": "You confront your brother, asking him about the weapons. He mutters under his breath that it's his time to take the fight to the zionists. Do you:",
-      "choices": [
-        {"description": "Argue and try to persuade him to stay", "nextNodeId": "5"},
-        {"description": "Reluctantly let him go", "nextNodeId": "6", "default": true},
-        {"description": "Go with him", "nextNodeId": "7"}
-      ]
-    },
-    "3": {
-      "story": "You decide to stay quiet and pretend to be asleep. After your brother leaves, you are left alone with your thoughts, worried about his safety. Do you:",
-      "choices": [
-        {"description": "Go back to sleep, trying to forget", "nextNodeId": "8", "default": true},
-        {"description": "Get up and tell your parents", "nextNodeId": "9"},
-        {"description": "Follow him discreetly", "nextNodeId": "7"}
-      ]
-    },
-    "4": {
-      "story": "You decide to help your brother. You help him pack his bag and pray for his safety. Do you:",
-      "choices": [
-        {"description": "Go back to sleep, trying to forget", "nextNodeId": "8", "default": true},
-        {"description": "Get up and tell your parents", "nextNodeId": "9"},
-        {"description": "Follow him discreetly", "nextNodeId": "7"}
-      ]
-    },
-    "7": {
-      "story": "The decision to follow is risky. You try to get dressed and sneak out as quietly and quickly as you can. By the time you leave you already can't see which way Ibrahim went. You walk to the edge of your street and see the modestly police. They will detain you if you are caught alone without a Male escort. Do you:",
-      "choices": [
-        {"description": "Try to sneak past them", "nextNodeId": "16"},
-        {"description": "Change your mind and go home", "nextNodeId": "17", "default": true}
-      ]
-    },
-    "5": {
-      "story": "You try to persuade your brother, talking about the dangers and the impact on your family. He seems torn but resolute. Do you:",
-      "choices": [
-        {"description": "Plead with him, bringing up family memories", "nextNodeId": "10"},
-        {"description": "Respect his decision but express your concerns", "nextNodeId": "11"},
-        {"description": "Say no more. You've said enough", "nextNodeId": "12", "default": true}
-      ]
-    },
-    "6": {
-      "story": "You let him go, feeling a mix of fear and respect for his determination. Alone, you ponder the complexity of your feelings. Do you:",
-      "choices": [
-        {"description": "Try to distract yourself with other activities", "nextNodeId": "13", "default": true},
-        {"description": "Reflect on the situation and write down your thoughts", "nextNodeId": "14"},
-        {"description": "Discuss your concerns with a close friend", "nextNodeId": "15"}
-      ]
-    }
-  }
+	"nodes": {
+		"1": {
+			"story": "It's October 7th, 2023. You're abruptly awakened by the sound of rustling. Rubbing the sleep from your eyes, you see your brother, Ibrahim, hurriedly packing something that looks like weapons into his bag.",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "2",
+					"description": "Try to stop him"
+				},
+				{ "nextNodeId": "2", "description": "Pretend to be asleep" },
+				{ "nextNodeId": "2", "description": " Help him" }
+			],
+			"externalSource": {
+				"url": "http://www.google.com",
+				"description": "Learn more about how children get radicalizes and armed in Gaza."
+			}
+		},
+		"101": {
+			"story": "Ibrahim gathers weapons for an invasion. He tells you that he's going to attack an Israeli settlement. ",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "3",
+					"description": "Support Ibrahim's invasion. "
+				},
+				{
+					"nextNodeId": "3",
+					"description": "Refuse to support Ibrahim's invasion."
+				},
+				{
+					"nextNodeId": "3",
+					"description": "Try to find a way to stop Ibrahim's invasion."
+				}
+			]
+		},
+		"2": {
+			"story": "Ibrahim brings back a young Israeli boy. You see them both walking into the Shifra hospital and realize he is going to keep him hostage in the tunnels built beneath.",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "3",
+					"description": "Follow them to the tunnel and and try to help the boy escape."
+				},
+				{
+					"nextNodeId": "3",
+					"description": "{Something about hiding scared and being passive}"
+				},
+				{
+					"nextNodeId": "3",
+					"description": "Encourage Ibrahim and help him detain the boy."
+				}
+			]
+		},
+		"3": {
+			"story": "You notice the Israeli boy's arm is injured.",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "4",
+					"description": "Offer first aid to the Israeli boy"
+				},
+				{
+					"nextNodeId": "4",
+					"description": "Inform someone else about the boy's injury, without getting directly involved."
+				},
+				{ "nextNodeId": "4", "description": "Ignore the boy's injury" }
+			]
+		},
+		"4": {
+			"story": "A Hamas soldier catches you trying to help the Israeli boy and captures you. You're given the option to join Hamas or get executed.",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "5",
+					"description": "Join Hamas to support their mission to destroy Israel."
+				},
+				{
+					"nextNodeId": "5",
+					"description": "Join hamas but decide to play along and gain their trust."
+				},
+				{
+					"nextNodeId": "5",
+					"description": "Refuse to cooperate and be executed."
+				}
+			]
+		},
+		"5": {
+			"story": "You attend a Hamas rally, where the leader calls for the destruction of Israel and the killing of Jews.",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "6",
+					"description": "Show support for Hamas leader and his vision. "
+				},
+				{
+					"nextNodeId": "6",
+					"description": "Question the Hamas leader's actions and beliefs. "
+				},
+				{
+					"nextNodeId": "6",
+					"description": "You decide to speak up and condem Hamas' acts."
+				}
+			]
+		},
+		"6": {
+			"story": "IDF evacuation Pamphlets Drop urging you to move south and warning of immanent strikes on your area due to Hamas Activity. Ibrahim dismisses them as Zionist propaganda",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "7",
+					"description": " You try to convince Ibrahim to take the pamphlets seriously and prepare to evacuate south. "
+				},
+				{ "nextNodeId": "7", "description": "You seek shelter" },
+				{
+					"nextNodeId": "7",
+					"description": "You agree with Ibrahim and dismiss the pamphlets as zionist propoganda"
+				}
+			]
+		},
+		"7": {
+			"story": "You participate in a rocket launch against Israel.",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "8",
+					"description": "Aim the rocket at a civilian target."
+				},
+				{
+					"nextNodeId": "8",
+					"description": "Aim the rocket at a military target."
+				},
+				{ "nextNodeId": "8", "description": "Sabotage the rocket launch." }
+			]
+		},
+		"8": {
+			"story": "You are able to go south thanks to the protection of the IDF",
+			"choices": [
+				{
+					"default": true,
+					"nextNodeId": "End",
+					"description": "congratulations"
+				}
+			]
+		}
+	}
 }

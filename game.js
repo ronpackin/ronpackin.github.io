@@ -12,7 +12,8 @@ async function initGame() {
 }
 
 function getJourneySummary() {
-	return journey.join("\n");
+  return "Ultimately, while your character shows moments of compassion and a desire for peace, the decisions to support and actively participate in a terrorist organization's activities have negative consequences, contributing to the perpetuation of violence and terrorism.\n\n Thankfully you've managed to evacuate the situation and can hopefully move forward to finding peace."
+	// return journey.join("\n");
 }
 
 function setEndGameState() {
