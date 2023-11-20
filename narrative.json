@@ -11,10 +11,10 @@
 				{ "nextNodeId": "2", "description": "Pretend to be asleep" },
 				{ "nextNodeId": "2", "description": " Help him" }
 			],
-			"externalSource": {
-				"url": "http://www.google.com",
-				"description": "Learn more about how children get radicalizes and armed in Gaza."
-			}
+      "externalSource": {
+        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+        "description": "Learn more about how children get radicalized in Gaza."
+      }
 		},
 		"101": {
 			"story": "Ibrahim gathers weapons for an invasion. He tells you that he's going to attack an Israeli settlement. ",
@@ -145,3 +145,4 @@
 		}
 	}
 }
+
