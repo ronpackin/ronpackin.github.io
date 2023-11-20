@@ -5,14 +5,37 @@ let timer;
 let countdown;
 const defaultDecisionTime = 30;
 let journey = [];
+const endGameSummary = "Ultimately, while your character shows moments of compassion and a desire for peace, the decisions to support and actively participate in a terrorist organization's activities have negative consequences, contributing to the perpetuation of violence and terrorism.\n\n Thankfully you've managed to evacuate the situation and can hopefully move forward to finding peace."
 
 async function initGame() {
 	narratives = await loadNarratives(); // Load and set narratives
 	displayNarrative("1");
 }
 
+function setBackgroundImage(nodeId) {
+  const imageUrl = `backgrounds/${nodeId}.png`;
+  const fallbackImageUrl = 'backgrounds/1.png';
+  const backgroundImageElement = document.getElementById('backgroundImage');
+
+  // Create an image object
+  let img = new Image();
+
+  // Set the src and try to load the image
+  img.src = imageUrl;
+
+  // On successful load, set the backgroundImage
+  img.onload = () => {
+      backgroundImageElement.style.backgroundImage = `url('${imageUrl}')`;
+  };
+
+  // On error, set the fallback image
+  img.onerror = () => {
+      backgroundImageElement.style.backgroundImage = `url('${fallbackImageUrl}')`;
+  };
+}
+
 function getJourneySummary() {
-  return "Ultimately, while your character shows moments of compassion and a desire for peace, the decisions to support and actively participate in a terrorist organization's activities have negative consequences, contributing to the perpetuation of violence and terrorism.\n\n Thankfully you've managed to evacuate the situation and can hopefully move forward to finding peace."
+  return endGameSummary
 	// return journey.join("\n");
 }
 
@@ -63,10 +86,7 @@ function displayNarrative(nodeId) {
 	}
 	journey.push("Situation: " + node.story);
 	document.getElementById("narrative").innerText = node.story;
-	document.getElementById(
-		"backgroundImage"
-	).style.backgroundImage = `url('backgrounds/1.png')`;
-	// document.getElementById('backgroundImage').style.backgroundImage = `url('backgrounds/${nodeId}.png')`;
+  setBackgroundImage(nodeId);
 	document.getElementById("externalResource").innerHTML = node.externalSource
 		? `<a target="_blank" href="${node.externalSource.url}">ⓘ ${node.externalSource.description}</a>`
 		: "";
