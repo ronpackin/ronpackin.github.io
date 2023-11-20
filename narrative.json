@@ -9,12 +9,12 @@
 					"description": "Try to stop him"
 				},
 				{ "nextNodeId": "2", "description": "Pretend to be asleep" },
-				{ "nextNodeId": "2", "description": " Help him" }
+				{ "nextNodeId": "2", "description": "Help him" }
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about how children get radicalized in Gaza."
+			}
 		},
 		"101": {
 			"story": "Ibrahim gathers weapons for an invasion. He tells you that he's going to attack an Israeli settlement. ",
@@ -33,10 +33,10 @@
 					"description": "Try to find a way to stop Ibrahim's invasion."
 				}
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about how children get radicalized in Gaza."
+			}
 		},
 		"2": {
 			"story": "Ibrahim brings back a young Israeli boy. You see them both walking into the Shifra hospital and realize he is going to keep him hostage in the tunnels built beneath.",
@@ -48,17 +48,17 @@
 				},
 				{
 					"nextNodeId": "3",
-          "description": "Hide and wait for Ibrahim to return."
+					"description": "Hide and wait for Ibrahim to return."
 				},
 				{
 					"nextNodeId": "3",
 					"description": "Encourage Ibrahim and help him detain the boy."
 				}
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about hostages being help in hospitals in Gaza."
+			}
 		},
 		"3": {
 			"story": "You notice the Israeli boy's arm is injured.",
@@ -74,10 +74,10 @@
 				},
 				{ "nextNodeId": "4", "description": "Ignore the boy's injury" }
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about medical care for hostages."
+			}
 		},
 		"4": {
 			"story": "A Hamas soldier catches you trying to help the Israeli boy and captures you. You're given the option to join Hamas or get executed.",
@@ -96,10 +96,10 @@
 					"description": "Refuse to cooperate and be executed."
 				}
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about how children get radicalized in Gaza."
+			}
 		},
 		"5": {
 			"story": "You attend a Hamas rally, where the leader calls for the destruction of Israel and the killing of Jews.",
@@ -118,10 +118,10 @@
 					"description": "You decide to speak up and condem Hamas' acts."
 				}
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about how children get radicalized in Gaza."
+			}
 		},
 		"6": {
 			"story": "IDF evacuation Pamphlets Drop urging you to move south and warning of immanent strikes on your area due to Hamas Activity. Ibrahim dismisses them as Zionist propaganda",
@@ -129,7 +129,7 @@
 				{
 					"default": true,
 					"nextNodeId": "7",
-					"description": " You try to convince Ibrahim to take the pamphlets seriously and prepare to evacuate south. "
+					"description": "You try to convince Ibrahim to take the pamphlets seriously and prepare to evacuate south."
 				},
 				{ "nextNodeId": "7", "description": "You seek shelter" },
 				{
@@ -137,10 +137,10 @@
 					"description": "You agree with Ibrahim and dismiss the pamphlets as zionist propoganda"
 				}
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about advanced strike warnings in Gaza."
+			}
 		},
 		"7": {
 			"story": "You participate in a rocket launch against Israel.",
@@ -156,10 +156,10 @@
 				},
 				{ "nextNodeId": "8", "description": "Sabotage the rocket launch." }
 			],
-      "externalSource": {
-        "url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
-        "description": "Learn more about how children get radicalized in Gaza."
-      }
+			"externalSource": {
+				"url": "https://www.washingtoninstitute.org/policy-analysis/teaching-terror-how-hamas-radicalizes-palestinian-society",
+				"description": "Learn more about where rockets are fired from in Gaza."
+			}
 		},
 		"8": {
 			"story": "You are able to go south thanks to the protection of the IDF",
@@ -173,4 +173,3 @@
 		}
 	}
 }
-
